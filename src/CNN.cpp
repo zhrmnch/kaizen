@@ -188,7 +188,7 @@ vector<F> initialize_filter(int dim){
 	vector<F> w;
 	for(int i = 0; i < dim; i++){
 		F num;
-		num = random();
+		num =F::random();
 		//w.push_back(num);
 		//w.push_back(quantize(0.5- (float)rand() / (float)RAND_MAX));
 		w.push_back(quantize((float)rand() / (float)RAND_MAX));

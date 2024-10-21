@@ -83,7 +83,7 @@ void get_aux_data(vector<F> &data){
             for(int j = 0; j < level; j++){
                 for(int k = 0; k < 3; k++){
                     F num;
-                    num = random();
+                    num = F::random();
                     data.push_back(num);
                 }
             }
@@ -95,7 +95,7 @@ void get_aux_data(vector<F> &data){
         while(level != 0){
             for(int j = 0; j < level; j++){
                 F num;
-                num = random();
+                num = F::random();
                 data.push_back(num);
             }
             num++;
@@ -125,7 +125,7 @@ F compute_y(F x){
 }
 
 void elliptic_curves_init(){
-	a = random();
-	B = random();
+	a = F::random();
+	B = F::random();
 	
 }

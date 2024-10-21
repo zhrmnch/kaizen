@@ -31,7 +31,7 @@ inline graph generate_random_expander(long long L, long long R, long long d)
         for(long long j = 0; j < d; ++j)
         {
             long long target = rand() % R;
-            F weight = random();
+            F weight = F::random();
             ret.neighbor[i][j] = target;
             ret.r_neighbor[target].push_back(i);
             ret.r_weight[target].push_back(weight);
